@@ -243,7 +243,7 @@ if submitted:
                         st.progress(conf, text=f"{diff}: {conf*100:.1f}%")
             
             # Interpretation
-            st.info(f"💡 The model estimates this problem is **{pred_class}** with a rating around **{int(round(pred_score, 2))}**.")
+            st.info(f"💡 The model estimates this problem is **{pred_class}** with a rating around **{int(round(pred_score, -2))}**.")
 
 # Show prediction history
 if st.session_state.prediction_history:
